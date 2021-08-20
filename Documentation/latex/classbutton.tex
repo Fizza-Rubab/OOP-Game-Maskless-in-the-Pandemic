@@ -1,0 +1,56 @@
+\hypertarget{classbutton}{}\doxysection{button Class Reference}
+\label{classbutton}\index{button@{button}}
+
+
+this class is used for making buttons that are rendered on the main welcome screen of th game. It inherits from \mbox{\hyperlink{class_entity}{Entity}} Class  
+
+
+
+
+{\ttfamily \#include $<$button.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbutton_ada5237dc1429537802fb27c11ce4e513}{button}} ()
+\item 
+\mbox{\Hypertarget{classbutton_aa4cae58a6f723f56b35babb516833ee6}\label{classbutton_aa4cae58a6f723f56b35babb516833ee6}} 
+{\bfseries button} (string n, string l, S\+D\+L\+\_\+\+Rect s, S\+D\+L\+\_\+\+Rect m, bool c)
+\item 
+void \mbox{\hyperlink{classbutton_a524c23e4866964323180eb4d10fab4c0}{show\+Button}} (S\+D\+L\+\_\+\+Renderer $\ast$g\+Renderer, S\+D\+L\+\_\+\+Texture $\ast$asset)
+\item 
+bool \mbox{\hyperlink{classbutton_a67b18579743065dab52006b026a9b026}{check\+Press}} (int x, int y)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this class is used for making buttons that are rendered on the main welcome screen of th game. It inherits from \mbox{\hyperlink{class_entity}{Entity}} Class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbutton_ada5237dc1429537802fb27c11ce4e513}\label{classbutton_ada5237dc1429537802fb27c11ce4e513}} 
+\index{button@{button}!button@{button}}
+\index{button@{button}!button@{button}}
+\doxysubsubsection{\texorpdfstring{button()}{button()}}
+{\footnotesize\ttfamily button\+::button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This constructor is initializing the button with a name location and is\+Clicked attribute. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbutton_a67b18579743065dab52006b026a9b026}\label{classbutton_a67b18579743065dab52006b026a9b026}} 
+\index{button@{button}!checkPress@{checkPress}}
+\index{checkPress@{checkPress}!button@{button}}
+\doxysubsubsection{\texorpdfstring{checkPress()}{checkPress()}}
+{\footnotesize\ttfamily bool button\+::check\+Press (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+This method is used to check if the button is pressed when user click on the screen. If the mmouse click coordinates collide with the S\+D\+L\+\_\+\+Rect of the button then this function will return true \mbox{\Hypertarget{classbutton_a524c23e4866964323180eb4d10fab4c0}\label{classbutton_a524c23e4866964323180eb4d10fab4c0}} 
+\index{button@{button}!showButton@{showButton}}
+\index{showButton@{showButton}!button@{button}}
+\doxysubsubsection{\texorpdfstring{showButton()}{showButton()}}
+{\footnotesize\ttfamily void button\+::show\+Button (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{g\+Renderer,  }\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{asset }\end{DoxyParamCaption})}
+
+This method is rendering the button on screen using the button asset and the S\+D\+L\+\_\+\+Renderer 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+H\+P/\+Downloads/oops/oops/\+Final/\+Maskless in the Pandemic/button.\+hpp\item 
+C\+:/\+Users/\+H\+P/\+Downloads/oops/oops/\+Final/\+Maskless in the Pandemic/button.\+cpp\end{DoxyCompactItemize}

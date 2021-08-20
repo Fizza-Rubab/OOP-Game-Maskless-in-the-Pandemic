@@ -1,0 +1,211 @@
+\hypertarget{class_player}{}\doxysection{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+
+
+This class is used generating the player object and player attributes and functions and handling its movement.  
+
+
+
+
+{\ttfamily \#include $<$player.\+hpp$>$}
+
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_a8a10f08299aee00d6b5f39c6fc7f30b0}{Player}} (S\+D\+L\+\_\+\+Texture $\ast$p, S\+D\+L\+\_\+\+Rect Src, S\+D\+L\+\_\+\+Rect Mover, vector$<$ vector$<$ \mbox{\hyperlink{class_entity}{Entity}} $\ast$ $>$$>$ $\ast$entities, vector$<$ vector$<$ \mbox{\hyperlink{class_entity}{Entity}} $\ast$ $>$$>$ $\ast$Centities, S\+D\+L\+\_\+\+Texture $\ast$Al)
+\item 
+void \mbox{\hyperlink{class_player_a82c3476f3e65a4e2ac6bcd040771bdd4}{update}} ()
+\item 
+void \mbox{\hyperlink{class_player_ac29cf3f1448635474c1ec565e0115794}{render}} (S\+D\+L\+\_\+\+Renderer $\ast$renderer)
+\item 
+void \mbox{\hyperlink{class_player_a1564ae47ff8f8ca939c9ab07d1776878}{handle\+\_\+inputs}} (\mbox{\hyperlink{class_inputs}{Inputs}} $\ast$inputs, \mbox{\hyperlink{struct_door}{Door}} $\ast$door, \mbox{\hyperlink{classcamera}{camera}} $\ast$c, S\+D\+L\+\_\+\+Rect rad, int cr)
+\item 
+bool \mbox{\hyperlink{class_player_ab1f2bf51fdf1d8930efa76223b61281e}{is\+\_\+alive}} ()
+\item 
+void \mbox{\hyperlink{class_player_a1e50f28da130b6a76d7281bbbcc7708a}{make\+Siren\+Noise}} ()
+\item 
+void \mbox{\hyperlink{class_player_adaf585f50dd611be8cd5411f7a8e516c}{make\+Footsteps\+Noise}} ()
+\item 
+void \mbox{\hyperlink{class_player_a1039632327f667a94b194892cd85d0c6}{make\+Door\+Noise}} ()
+\item 
+void \mbox{\hyperlink{class_player_afdfa40aceae83e8f47a50f0d394ccb41}{make\+Assign\+Noise}} ()
+\item 
+void \mbox{\hyperlink{class_player_a94a60ebfd1154b05de36457fbbb84ab7}{check\+Camera\+Radar}} (\mbox{\hyperlink{classcamera}{camera}} $\ast$c)
+\item 
+bool \mbox{\hyperlink{class_player_a7e15a3a1181df6be3bfcf38a88f72891}{check\+Door}} (\mbox{\hyperlink{struct_door}{Door}} $\ast$curD)
+\item 
+bool \mbox{\hyperlink{class_player_aff59f674e1679cd2ea4a49c24a73e86c}{check\+C\+SO}} (S\+D\+L\+\_\+\+Rect rad)
+\item 
+bool \mbox{\hyperlink{class_player_aac7447a77cd9542e2d7dc215bbd77606}{next\+Room}} ()
+\item 
+bool \mbox{\hyperlink{class_player_a5013ec82f0505af5218042e74896767f}{check\+Collision\+All}} (int cr)
+\item 
+void \mbox{\hyperlink{class_player_a4eae8be93b1909b0eff0d4625c79ca34}{check\+Collision\+Assign}} (int curr\+\_\+room)
+\item 
+bool \mbox{\hyperlink{class_player_aba8302685212936e9ec5651e6d7c690a}{all\+Items\+Collected}} ()
+\item 
+int \mbox{\hyperlink{class_player_aa34cb0be304d814878301ac474b4dfd4}{get\+Assignments}} ()
+\item 
+\mbox{\hyperlink{classhealth}{health}} \mbox{\hyperlink{class_player_aba4f3d908a96cd22743ba40bfd15528c}{get\+Health}} ()
+\item 
+\mbox{\hyperlink{class_player_a749d2c00e1fe0f5c2746f7505a58c062}{$\sim$\+Player}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class is used generating the player object and player attributes and functions and handling its movement. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_player_a8a10f08299aee00d6b5f39c6fc7f30b0}\label{class_player_a8a10f08299aee00d6b5f39c6fc7f30b0}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{p,  }\item[{S\+D\+L\+\_\+\+Rect}]{Src,  }\item[{S\+D\+L\+\_\+\+Rect}]{Mover,  }\item[{vector$<$ vector$<$ \mbox{\hyperlink{class_entity}{Entity}} $\ast$ $>$$>$ $\ast$}]{entities,  }\item[{vector$<$ vector$<$ \mbox{\hyperlink{class_entity}{Entity}} $\ast$ $>$$>$ $\ast$}]{Centities,  }\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{Al }\end{DoxyParamCaption})}
+
+Thsi is the contsurctor for player class which intializes the player 
+\begin{DoxyParams}{Parameters}
+{\em p} & S\+D\+L\+\_\+\+Texture$\ast$ of the loaded spritesheet of the player \\
+\hline
+{\em Src} & source S\+D\+L\+\_\+\+Rect coordinate of the player in spritesheet \\
+\hline
+{\em Mover} & mover S\+D\+L\+\_\+\+Rect coordinate of the player on the game window. \\
+\hline
+{\em entities} & array of stationary objects in the room that player can collide with \\
+\hline
+{\em Centities} & array of collectibles and assignments which player has to collect. \\
+\hline
+{\em Al} & S\+D\+L\+\_\+\+Texture$\ast$ of the loaded spritesheet of the player\textquotesingle{}s health \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_a749d2c00e1fe0f5c2746f7505a58c062}\label{class_player_a749d2c00e1fe0f5c2746f7505a58c062}} 
+\index{Player@{Player}!````~Player@{$\sim$Player}}
+\index{````~Player@{$\sim$Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{$\sim$Player()}{~Player()}}
+{\footnotesize\ttfamily Player\+::$\sim$\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This is the destructor for the player class which deletes any dynamically allocated memory and frees up space. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_aba8302685212936e9ec5651e6d7c690a}\label{class_player_aba8302685212936e9ec5651e6d7c690a}} 
+\index{Player@{Player}!allItemsCollected@{allItemsCollected}}
+\index{allItemsCollected@{allItemsCollected}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{allItemsCollected()}{allItemsCollected()}}
+{\footnotesize\ttfamily bool Player\+::all\+Items\+Collected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method returns if all 8 assignments have been collecte or not \mbox{\Hypertarget{class_player_a94a60ebfd1154b05de36457fbbb84ab7}\label{class_player_a94a60ebfd1154b05de36457fbbb84ab7}} 
+\index{Player@{Player}!checkCameraRadar@{checkCameraRadar}}
+\index{checkCameraRadar@{checkCameraRadar}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{checkCameraRadar()}{checkCameraRadar()}}
+{\footnotesize\ttfamily void Player\+::check\+Camera\+Radar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcamera}{camera}} $\ast$}]{c }\end{DoxyParamCaption})}
+
+This method chcks if the the player is in the camera radar. if yes, it decrements the health of player \mbox{\Hypertarget{class_player_a5013ec82f0505af5218042e74896767f}\label{class_player_a5013ec82f0505af5218042e74896767f}} 
+\index{Player@{Player}!checkCollisionAll@{checkCollisionAll}}
+\index{checkCollisionAll@{checkCollisionAll}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{checkCollisionAll()}{checkCollisionAll()}}
+{\footnotesize\ttfamily bool Player\+::check\+Collision\+All (\begin{DoxyParamCaption}\item[{int}]{cr }\end{DoxyParamCaption})}
+
+This method checks the collision of player with all entities/room objects in the current room \mbox{\Hypertarget{class_player_a4eae8be93b1909b0eff0d4625c79ca34}\label{class_player_a4eae8be93b1909b0eff0d4625c79ca34}} 
+\index{Player@{Player}!checkCollisionAssign@{checkCollisionAssign}}
+\index{checkCollisionAssign@{checkCollisionAssign}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{checkCollisionAssign()}{checkCollisionAssign()}}
+{\footnotesize\ttfamily void Player\+::check\+Collision\+Assign (\begin{DoxyParamCaption}\item[{int}]{curr\+\_\+room }\end{DoxyParamCaption})}
+
+This method checks the collision of player with all collectible assignment in the current room \mbox{\Hypertarget{class_player_aff59f674e1679cd2ea4a49c24a73e86c}\label{class_player_aff59f674e1679cd2ea4a49c24a73e86c}} 
+\index{Player@{Player}!checkCSO@{checkCSO}}
+\index{checkCSO@{checkCSO}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{checkCSO()}{checkCSO()}}
+{\footnotesize\ttfamily bool Player\+::check\+C\+SO (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Rect}]{rad }\end{DoxyParamCaption})}
+
+This method checks if the the player is in the radius of the \mbox{\hyperlink{class_c_s_o}{C\+SO}}. if yes, it decrements the health of player \mbox{\Hypertarget{class_player_a7e15a3a1181df6be3bfcf38a88f72891}\label{class_player_a7e15a3a1181df6be3bfcf38a88f72891}} 
+\index{Player@{Player}!checkDoor@{checkDoor}}
+\index{checkDoor@{checkDoor}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{checkDoor()}{checkDoor()}}
+{\footnotesize\ttfamily bool Player\+::check\+Door (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_door}{Door}} $\ast$}]{curD }\end{DoxyParamCaption})}
+
+This method checks player is standing at the door of the current room and pressing space bar to go to the next room. \mbox{\Hypertarget{class_player_aa34cb0be304d814878301ac474b4dfd4}\label{class_player_aa34cb0be304d814878301ac474b4dfd4}} 
+\index{Player@{Player}!getAssignments@{getAssignments}}
+\index{getAssignments@{getAssignments}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getAssignments()}{getAssignments()}}
+{\footnotesize\ttfamily int Player\+::get\+Assignments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This method returns the number of assignment that are left and have to be collected in a particuar level. \mbox{\Hypertarget{class_player_aba4f3d908a96cd22743ba40bfd15528c}\label{class_player_aba4f3d908a96cd22743ba40bfd15528c}} 
+\index{Player@{Player}!getHealth@{getHealth}}
+\index{getHealth@{getHealth}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getHealth()}{getHealth()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhealth}{health}} Player\+::get\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method returns the health of the player \mbox{\Hypertarget{class_player_a1564ae47ff8f8ca939c9ab07d1776878}\label{class_player_a1564ae47ff8f8ca939c9ab07d1776878}} 
+\index{Player@{Player}!handle\_inputs@{handle\_inputs}}
+\index{handle\_inputs@{handle\_inputs}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{handle\_inputs()}{handle\_inputs()}}
+{\footnotesize\ttfamily void Player\+::handle\+\_\+inputs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inputs}{Inputs}} $\ast$}]{inputs,  }\item[{\mbox{\hyperlink{struct_door}{Door}} $\ast$}]{door,  }\item[{\mbox{\hyperlink{classcamera}{camera}} $\ast$}]{c,  }\item[{S\+D\+L\+\_\+\+Rect}]{rad,  }\item[{int}]{cr }\end{DoxyParamCaption})}
+
+This is the method to handle the inpputs user makes for the player It moves the player up down left right, space to open the dors in the curret room. It also checks for camera and \mbox{\hyperlink{class_c_s_o}{C\+SO}} radius and make changes to health accordingly. \mbox{\Hypertarget{class_player_ab1f2bf51fdf1d8930efa76223b61281e}\label{class_player_ab1f2bf51fdf1d8930efa76223b61281e}} 
+\index{Player@{Player}!is\_alive@{is\_alive}}
+\index{is\_alive@{is\_alive}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{is\_alive()}{is\_alive()}}
+{\footnotesize\ttfamily bool Player\+::is\+\_\+alive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method returns whther the player is alive or dead if his health finsihes. \mbox{\Hypertarget{class_player_afdfa40aceae83e8f47a50f0d394ccb41}\label{class_player_afdfa40aceae83e8f47a50f0d394ccb41}} 
+\index{Player@{Player}!makeAssignNoise@{makeAssignNoise}}
+\index{makeAssignNoise@{makeAssignNoise}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{makeAssignNoise()}{makeAssignNoise()}}
+{\footnotesize\ttfamily void Player\+::make\+Assign\+Noise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method makes assignment collection noises when the player collects an assignment \mbox{\Hypertarget{class_player_a1039632327f667a94b194892cd85d0c6}\label{class_player_a1039632327f667a94b194892cd85d0c6}} 
+\index{Player@{Player}!makeDoorNoise@{makeDoorNoise}}
+\index{makeDoorNoise@{makeDoorNoise}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{makeDoorNoise()}{makeDoorNoise()}}
+{\footnotesize\ttfamily void Player\+::make\+Door\+Noise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method makes door creak noises when the player opens a door \mbox{\Hypertarget{class_player_adaf585f50dd611be8cd5411f7a8e516c}\label{class_player_adaf585f50dd611be8cd5411f7a8e516c}} 
+\index{Player@{Player}!makeFootstepsNoise@{makeFootstepsNoise}}
+\index{makeFootstepsNoise@{makeFootstepsNoise}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{makeFootstepsNoise()}{makeFootstepsNoise()}}
+{\footnotesize\ttfamily void Player\+::make\+Footsteps\+Noise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method makes footstep noises when the player moves \mbox{\Hypertarget{class_player_a1e50f28da130b6a76d7281bbbcc7708a}\label{class_player_a1e50f28da130b6a76d7281bbbcc7708a}} 
+\index{Player@{Player}!makeSirenNoise@{makeSirenNoise}}
+\index{makeSirenNoise@{makeSirenNoise}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{makeSirenNoise()}{makeSirenNoise()}}
+{\footnotesize\ttfamily void Player\+::make\+Siren\+Noise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method makes siren noises when the player gets into the vicinity of a camera. \mbox{\Hypertarget{class_player_aac7447a77cd9542e2d7dc215bbd77606}\label{class_player_aac7447a77cd9542e2d7dc215bbd77606}} 
+\index{Player@{Player}!nextRoom@{nextRoom}}
+\index{nextRoom@{nextRoom}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{nextRoom()}{nextRoom()}}
+{\footnotesize\ttfamily bool Player\+::next\+Room (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method checks if the the player has to move to the next room \mbox{\Hypertarget{class_player_ac29cf3f1448635474c1ec565e0115794}\label{class_player_ac29cf3f1448635474c1ec565e0115794}} 
+\index{Player@{Player}!render@{render}}
+\index{render@{render}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Player\+::render (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This is the method to render the player on the screen by using S\+D\+L\+\_\+\+Renderer passed as a paramter. it is the virtual mehtod of the parent abstract class \textquotesingle{}\mbox{\hyperlink{class_entity}{Entity}}\textquotesingle{} of the player. 
+
+Implements \mbox{\hyperlink{class_entity_aa85678fd7986904da22a803f81033650}{Entity}}.
+
+\mbox{\Hypertarget{class_player_a82c3476f3e65a4e2ac6bcd040771bdd4}\label{class_player_a82c3476f3e65a4e2ac6bcd040771bdd4}} 
+\index{Player@{Player}!update@{update}}
+\index{update@{update}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Player\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This is the method to update the player within every game frame it is the virtual mehtod of the parent abstract class \textquotesingle{}\mbox{\hyperlink{class_entity}{Entity}}\textquotesingle{} of the player. 
+
+Implements \mbox{\hyperlink{class_entity_a59a29d9b7474baf13c9c76859242287d}{Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+H\+P/\+Downloads/oops/oops/\+Final/\+Maskless in the Pandemic/player.\+hpp\item 
+C\+:/\+Users/\+H\+P/\+Downloads/oops/oops/\+Final/\+Maskless in the Pandemic/player.\+cpp\end{DoxyCompactItemize}

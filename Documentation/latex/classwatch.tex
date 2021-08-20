@@ -1,0 +1,69 @@
+\hypertarget{classwatch}{}\doxysection{watch Class Reference}
+\label{classwatch}\index{watch@{watch}}
+
+
+This class is used for generating and displaying clocks corresponding to the timer indicating how much time is left in the \mbox{\hyperlink{classlevel2}{level2}} of the game.  
+
+
+
+
+{\ttfamily \#include $<$watch.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classwatch_a30bf4739aae1d96247cb93a07f2d9e2c}{watch}} ()
+\item 
+\mbox{\hyperlink{classwatch_ac975e755f36bd16546ce1bbdb018ea99}{watch}} (S\+D\+L\+\_\+\+Texture $\ast$w, int n\+Watches)
+\item 
+void \mbox{\hyperlink{classwatch_aca8a7dbf819ef0670cb31882871027ed}{render}} (S\+D\+L\+\_\+\+Renderer $\ast$renderer, int count)
+\item 
+void \mbox{\hyperlink{classwatch_ab3bb4e0d9ea915a8126040632d474a2c}{update}} (Uint32 time)
+\item 
+int \mbox{\hyperlink{classwatch_ab183f455f6e74d98f2fad9f056becae7}{get\+Clocks}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is used for generating and displaying clocks corresponding to the timer indicating how much time is left in the \mbox{\hyperlink{classlevel2}{level2}} of the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classwatch_a30bf4739aae1d96247cb93a07f2d9e2c}\label{classwatch_a30bf4739aae1d96247cb93a07f2d9e2c}} 
+\index{watch@{watch}!watch@{watch}}
+\index{watch@{watch}!watch@{watch}}
+\doxysubsubsection{\texorpdfstring{watch()}{watch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily watch\+::watch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This is the default no paramter constructor for a watch \mbox{\Hypertarget{classwatch_ac975e755f36bd16546ce1bbdb018ea99}\label{classwatch_ac975e755f36bd16546ce1bbdb018ea99}} 
+\index{watch@{watch}!watch@{watch}}
+\index{watch@{watch}!watch@{watch}}
+\doxysubsubsection{\texorpdfstring{watch()}{watch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily watch\+::watch (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{w,  }\item[{int}]{n\+Watches }\end{DoxyParamCaption})}
+
+This is the constructor for a watch which intializes it with it\textquotesingle{}s Spritesheet texture and tells the total time or clocks in the game 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classwatch_ab183f455f6e74d98f2fad9f056becae7}\label{classwatch_ab183f455f6e74d98f2fad9f056becae7}} 
+\index{watch@{watch}!getClocks@{getClocks}}
+\index{getClocks@{getClocks}!watch@{watch}}
+\doxysubsubsection{\texorpdfstring{getClocks()}{getClocks()}}
+{\footnotesize\ttfamily int watch\+::get\+Clocks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method returns the total no of clocks/minutes left in the level \mbox{\Hypertarget{classwatch_aca8a7dbf819ef0670cb31882871027ed}\label{classwatch_aca8a7dbf819ef0670cb31882871027ed}} 
+\index{watch@{watch}!render@{render}}
+\index{render@{render}!watch@{watch}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void watch\+::render (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+This method renders and dispays the clock on screen \mbox{\Hypertarget{classwatch_ab3bb4e0d9ea915a8126040632d474a2c}\label{classwatch_ab3bb4e0d9ea915a8126040632d474a2c}} 
+\index{watch@{watch}!update@{update}}
+\index{update@{update}!watch@{watch}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void watch\+::update (\begin{DoxyParamCaption}\item[{Uint32}]{time }\end{DoxyParamCaption})}
+
+This method updates the watch and decrements the totalwatches everytime 1 minute has passed by checking the curren time passsed as a parameter. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+H\+P/\+Downloads/oops/oops/\+Final/\+Maskless in the Pandemic/watch.\+hpp\item 
+C\+:/\+Users/\+H\+P/\+Downloads/oops/oops/\+Final/\+Maskless in the Pandemic/watch.\+cpp\end{DoxyCompactItemize}

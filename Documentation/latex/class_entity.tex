@@ -1,0 +1,98 @@
+\hypertarget{class_entity}{}\doxysection{Entity Class Reference}
+\label{class_entity}\index{Entity@{Entity}}
+
+
+the parent abstract class for all game objects It has basic virtual functions associated to entitties such as render, update.  
+
+
+
+
+{\ttfamily \#include $<$entity.\+hpp$>$}
+
+Inheritance diagram for Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_entity}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_entity_af27cca00895fb0d8c92bc53db20282d5}{Entity}} (S\+D\+L\+\_\+\+Rect Src, S\+D\+L\+\_\+\+Rect Mover, int screen\+\_\+w, int screen\+\_\+h)
+\item 
+S\+D\+L\+\_\+\+Rect \mbox{\hyperlink{class_entity_a56750b430ae22a5c7bb364863e9662fe}{get\+Mover\+Coord}} () const
+\item 
+virtual \mbox{\hyperlink{class_entity_ac2da1e8a32161accc56f39ac52cebd86}{$\sim$\+Entity}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_entity_a59a29d9b7474baf13c9c76859242287d}{update}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_entity_aa85678fd7986904da22a803f81033650}{render}} (S\+D\+L\+\_\+\+Renderer $\ast$renderer)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_entity_a845dd60ec4d076960a25f65b79a9fe9c}\label{class_entity_a845dd60ec4d076960a25f65b79a9fe9c}} 
+S\+D\+L\+\_\+\+Rect {\bfseries src}
+\item 
+\mbox{\Hypertarget{class_entity_a02f93c751b74885d698d3d60ce5bd4bf}\label{class_entity_a02f93c751b74885d698d3d60ce5bd4bf}} 
+S\+D\+L\+\_\+\+Rect {\bfseries mover}
+\item 
+\mbox{\Hypertarget{class_entity_ac08d8b847da6a81d9b4a4e8feee00e3f}\label{class_entity_ac08d8b847da6a81d9b4a4e8feee00e3f}} 
+int {\bfseries screen\+\_\+w} =800
+\item 
+\mbox{\Hypertarget{class_entity_a1cce3b81fa8e4892e31cffb361566fdc}\label{class_entity_a1cce3b81fa8e4892e31cffb361566fdc}} 
+int {\bfseries screen\+\_\+h} =600
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+the parent abstract class for all game objects It has basic virtual functions associated to entitties such as render, update. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_entity_af27cca00895fb0d8c92bc53db20282d5}\label{class_entity_af27cca00895fb0d8c92bc53db20282d5}} 
+\index{Entity@{Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Entity()}{Entity()}}
+{\footnotesize\ttfamily Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Rect}]{Src,  }\item[{S\+D\+L\+\_\+\+Rect}]{Mover,  }\item[{int}]{screen\+\_\+w,  }\item[{int}]{screen\+\_\+h }\end{DoxyParamCaption})}
+
+This is the constructor for entity class that takes in Src coordinates of the enity, its mover coordinates and the width and heoght of the game screen. \mbox{\Hypertarget{class_entity_ac2da1e8a32161accc56f39ac52cebd86}\label{class_entity_ac2da1e8a32161accc56f39ac52cebd86}} 
+\index{Entity@{Entity}!````~Entity@{$\sim$Entity}}
+\index{````~Entity@{$\sim$Entity}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{$\sim$Entity()}{~Entity()}}
+{\footnotesize\ttfamily Entity\+::$\sim$\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This is a pure virtual function-\/a destrcutor for entity class objects. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_entity_a56750b430ae22a5c7bb364863e9662fe}\label{class_entity_a56750b430ae22a5c7bb364863e9662fe}} 
+\index{Entity@{Entity}!getMoverCoord@{getMoverCoord}}
+\index{getMoverCoord@{getMoverCoord}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getMoverCoord()}{getMoverCoord()}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Rect Entity\+::get\+Mover\+Coord (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+This method returns the mover Coordinates in the form of S\+D\+L\+\_\+\+Rect of the entity object. \mbox{\Hypertarget{class_entity_aa85678fd7986904da22a803f81033650}\label{class_entity_aa85678fd7986904da22a803f81033650}} 
+\index{Entity@{Entity}!render@{render}}
+\index{render@{render}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily virtual void Entity\+::render (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This is a pure virtual method to render the entity on screen by using the S\+D\+L\+\_\+\+Renderer which is passed as a parameter. 
+
+Implemented in \mbox{\hyperlink{classroom_obj_a6635139ebee204dfac8c177c5e273c63}{room\+Obj}}, \mbox{\hyperlink{class_player_ac29cf3f1448635474c1ec565e0115794}{Player}}, \mbox{\hyperlink{class_c_s_o_a55385987ab7c52fa1e56d179e5d4703a}{C\+SO}}, \mbox{\hyperlink{classcamera_ade2f055476802aa9f54017619a91e2b1}{camera}}, and \mbox{\hyperlink{classassignment_ae78441233913e96f3ce0c2bcf1d8decc}{assignment}}.
+
+\mbox{\Hypertarget{class_entity_a59a29d9b7474baf13c9c76859242287d}\label{class_entity_a59a29d9b7474baf13c9c76859242287d}} 
+\index{Entity@{Entity}!update@{update}}
+\index{update@{update}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Entity\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This is a pure virtual method to update the enity in every game frame. 
+
+Implemented in \mbox{\hyperlink{classroom_obj_a2c2ed3b9c896160d652a03bc4eca6f98}{room\+Obj}}, \mbox{\hyperlink{class_player_a82c3476f3e65a4e2ac6bcd040771bdd4}{Player}}, \mbox{\hyperlink{class_c_s_o_a1634394cb94e20a45a0ab2457076ae26}{C\+SO}}, \mbox{\hyperlink{classcamera_ad7331b32ddf5cc06ca0a6c710c6202b8}{camera}}, and \mbox{\hyperlink{classassignment_a4cbb21922b10c10e43cebb0551249db2}{assignment}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+H\+P/\+Downloads/oops/oops/\+Final/\+Maskless in the Pandemic/entity.\+hpp\item 
+C\+:/\+Users/\+H\+P/\+Downloads/oops/oops/\+Final/\+Maskless in the Pandemic/entity.\+cpp\end{DoxyCompactItemize}

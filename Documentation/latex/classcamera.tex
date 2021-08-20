@@ -1,0 +1,84 @@
+\hypertarget{classcamera}{}\doxysection{camera Class Reference}
+\label{classcamera}\index{camera@{camera}}
+
+
+this class is used for generating the camera object and its radar under which the player health starts to decrease. It inherits from \mbox{\hyperlink{class_entity}{Entity}} Class  
+
+
+
+
+{\ttfamily \#include $<$camera.\+hpp$>$}
+
+Inheritance diagram for camera\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcamera}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcamera_a31b99c6fe7c6c8adaac0651b940511af}{camera}} (S\+D\+L\+\_\+\+Texture $\ast$a, S\+D\+L\+\_\+\+Rect s, S\+D\+L\+\_\+\+Rect m, float n)
+\item 
+\mbox{\hyperlink{classcamera_a384b4ae0641bdf988461344fc9ba1e4e}{$\sim$camera}} ()
+\item 
+void \mbox{\hyperlink{classcamera_ad7331b32ddf5cc06ca0a6c710c6202b8}{update}} ()
+\item 
+void \mbox{\hyperlink{classcamera_ade2f055476802aa9f54017619a91e2b1}{render}} (S\+D\+L\+\_\+\+Renderer $\ast$renderer)
+\item 
+bool \mbox{\hyperlink{classcamera_ae845bc83943815bd205e55613f69f19e}{check\+Collision}} (\mbox{\hyperlink{class_entity}{Entity}} $\ast$e)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+this class is used for generating the camera object and its radar under which the player health starts to decrease. It inherits from \mbox{\hyperlink{class_entity}{Entity}} Class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcamera_a31b99c6fe7c6c8adaac0651b940511af}\label{classcamera_a31b99c6fe7c6c8adaac0651b940511af}} 
+\index{camera@{camera}!camera@{camera}}
+\index{camera@{camera}!camera@{camera}}
+\doxysubsubsection{\texorpdfstring{camera()}{camera()}}
+{\footnotesize\ttfamily camera\+::camera (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{a,  }\item[{S\+D\+L\+\_\+\+Rect}]{s,  }\item[{S\+D\+L\+\_\+\+Rect}]{m,  }\item[{float}]{n }\end{DoxyParamCaption})}
+
+This constructor is initializing the camera with a S\+D\+L\+\_\+\+Texture the source coordinates of the camera in the texture and the mover coordinates of the camera on the screen window and an angle n at which it will be displayed on screen. \mbox{\Hypertarget{classcamera_a384b4ae0641bdf988461344fc9ba1e4e}\label{classcamera_a384b4ae0641bdf988461344fc9ba1e4e}} 
+\index{camera@{camera}!````~camera@{$\sim$camera}}
+\index{````~camera@{$\sim$camera}!camera@{camera}}
+\doxysubsubsection{\texorpdfstring{$\sim$camera()}{~camera()}}
+{\footnotesize\ttfamily camera\+::$\sim$camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This is the destructor for the camera class object. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcamera_ae845bc83943815bd205e55613f69f19e}\label{classcamera_ae845bc83943815bd205e55613f69f19e}} 
+\index{camera@{camera}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!camera@{camera}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}}
+{\footnotesize\ttfamily bool camera\+::check\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_entity}{Entity}} $\ast$}]{e }\end{DoxyParamCaption})}
+
+This method is used to check collision of the camera with an enoty passed as a function parameter. \mbox{\Hypertarget{classcamera_ade2f055476802aa9f54017619a91e2b1}\label{classcamera_ade2f055476802aa9f54017619a91e2b1}} 
+\index{camera@{camera}!render@{render}}
+\index{render@{render}!camera@{camera}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void camera\+::render (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This method(virtual function of entity class) is used to render the camera on screen through the S\+D\+K\+\_\+\+Renderer that is passed as an argument. 
+
+Implements \mbox{\hyperlink{class_entity_aa85678fd7986904da22a803f81033650}{Entity}}.
+
+\mbox{\Hypertarget{classcamera_ad7331b32ddf5cc06ca0a6c710c6202b8}\label{classcamera_ad7331b32ddf5cc06ca0a6c710c6202b8}} 
+\index{camera@{camera}!update@{update}}
+\index{update@{update}!camera@{camera}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void camera\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This is the virtual function of thge entity class that updates the entity in this case the camera. 
+
+Implements \mbox{\hyperlink{class_entity_a59a29d9b7474baf13c9c76859242287d}{Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+H\+P/\+Downloads/oops/oops/\+Final/\+Maskless in the Pandemic/camera.\+hpp\item 
+C\+:/\+Users/\+H\+P/\+Downloads/oops/oops/\+Final/\+Maskless in the Pandemic/camera.\+cpp\end{DoxyCompactItemize}

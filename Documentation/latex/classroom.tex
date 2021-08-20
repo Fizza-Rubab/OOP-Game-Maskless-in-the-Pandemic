@@ -1,0 +1,106 @@
+\hypertarget{classroom}{}\doxysection{room Class Reference}
+\label{classroom}\index{room@{room}}
+
+
+This class is used for creating the rooms in each level and allocate all the static room\+Objects and the collectibles.  
+
+
+
+
+{\ttfamily \#include $<$room.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classroom_a653537743e1f4b3886edfbce1e350f07}{room}} ()
+\item 
+\mbox{\hyperlink{classroom_a87f233e38131d61a1922b9b613a3bba5}{$\sim$room}} ()
+\item 
+\mbox{\hyperlink{classroom_a7ca524230d3570c1691ce6776beb086a}{room}} (S\+D\+L\+\_\+\+Texture $\ast$a, S\+D\+L\+\_\+\+Rect s, S\+D\+L\+\_\+\+Rect m, int r, S\+D\+L\+\_\+\+Rect D, vector$<$ \mbox{\hyperlink{class_entity}{Entity}} $\ast$ $>$ RO, vector$<$ \mbox{\hyperlink{class_entity}{Entity}} $\ast$ $>$ C)
+\item 
+void \mbox{\hyperlink{classroom_a38dd11afa1a753d173a940147bbaffe3}{show\+Room}} (S\+D\+L\+\_\+\+Renderer $\ast$g\+Renderer)
+\item 
+void \mbox{\hyperlink{classroom_a4b00dcbec4de307637221cb024155519}{hide\+Room}} (S\+D\+L\+\_\+\+Renderer $\ast$g\+Renderer)
+\item 
+bool \mbox{\hyperlink{classroom_a073a559a1f0ad1e9c4c367dc21db977c}{door\+Leave}} (\mbox{\hyperlink{class_player}{Player}} $\ast$p)
+\item 
+\mbox{\hyperlink{struct_door}{Door}} $\ast$ \mbox{\hyperlink{classroom_a11f4dc8bab258fba2c78866e40903b43}{get\+Door}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classroom_a7f6494cb36072f97aef271a467c08b49}\label{classroom_a7f6494cb36072f97aef271a467c08b49}} 
+S\+D\+L\+\_\+\+Rect {\bfseries mover} =\{0,0, 800, 600\}
+\item 
+\mbox{\Hypertarget{classroom_a8bcc9568fc5bc2bf40826d56ba508713}\label{classroom_a8bcc9568fc5bc2bf40826d56ba508713}} 
+S\+D\+L\+\_\+\+Rect {\bfseries src} =\{0,0, 1280, 960\}
+\item 
+\mbox{\Hypertarget{classroom_a8ccc8b1464ec7627e5802390981e8b32}\label{classroom_a8ccc8b1464ec7627e5802390981e8b32}} 
+S\+D\+L\+\_\+\+Texture $\ast$ {\bfseries asset}
+\item 
+\mbox{\Hypertarget{classroom_a9e82c4e881d10f15a6b4129ba27b148c}\label{classroom_a9e82c4e881d10f15a6b4129ba27b148c}} 
+\mbox{\hyperlink{struct_door}{Door}} $\ast$ {\bfseries door}
+\item 
+\mbox{\Hypertarget{classroom_a694f8c43a7d12924887682eaf471818f}\label{classroom_a694f8c43a7d12924887682eaf471818f}} 
+std\+::vector$<$ \mbox{\hyperlink{class_entity}{Entity}} $\ast$ $>$ {\bfseries room\+Objects}
+\item 
+\mbox{\Hypertarget{classroom_a15b99cb727b4c656cd7360b268084588}\label{classroom_a15b99cb727b4c656cd7360b268084588}} 
+std\+::vector$<$ \mbox{\hyperlink{class_entity}{Entity}} $\ast$ $>$ {\bfseries room\+Collectibles}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is used for creating the rooms in each level and allocate all the static room\+Objects and the collectibles. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classroom_a653537743e1f4b3886edfbce1e350f07}\label{classroom_a653537743e1f4b3886edfbce1e350f07}} 
+\index{room@{room}!room@{room}}
+\index{room@{room}!room@{room}}
+\doxysubsubsection{\texorpdfstring{room()}{room()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily room\+::room (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This is a default no parameter constructor for romm \mbox{\Hypertarget{classroom_a87f233e38131d61a1922b9b613a3bba5}\label{classroom_a87f233e38131d61a1922b9b613a3bba5}} 
+\index{room@{room}!````~room@{$\sim$room}}
+\index{````~room@{$\sim$room}!room@{room}}
+\doxysubsubsection{\texorpdfstring{$\sim$room()}{~room()}}
+{\footnotesize\ttfamily room\+::$\sim$room (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This is a destructor for room entity which clears up any dynamically allocted memory. \mbox{\Hypertarget{classroom_a7ca524230d3570c1691ce6776beb086a}\label{classroom_a7ca524230d3570c1691ce6776beb086a}} 
+\index{room@{room}!room@{room}}
+\index{room@{room}!room@{room}}
+\doxysubsubsection{\texorpdfstring{room()}{room()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily room\+::room (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{a,  }\item[{S\+D\+L\+\_\+\+Rect}]{s,  }\item[{S\+D\+L\+\_\+\+Rect}]{m,  }\item[{int}]{r,  }\item[{S\+D\+L\+\_\+\+Rect}]{D,  }\item[{vector$<$ \mbox{\hyperlink{class_entity}{Entity}} $\ast$ $>$}]{RO,  }\item[{vector$<$ \mbox{\hyperlink{class_entity}{Entity}} $\ast$ $>$}]{C }\end{DoxyParamCaption})}
+
+This is a constructor for room object which initializes the room with sdl texture of room, its source coordinate, mover coordinates. It also takes in the vectors for room\+Objects and the room collectibles. It also allocates the \mbox{\hyperlink{struct_door}{Door}} within the room using its S\+D\+L\+\_\+\+Rect coordinates passed in parameter D. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classroom_a073a559a1f0ad1e9c4c367dc21db977c}\label{classroom_a073a559a1f0ad1e9c4c367dc21db977c}} 
+\index{room@{room}!doorLeave@{doorLeave}}
+\index{doorLeave@{doorLeave}!room@{room}}
+\doxysubsubsection{\texorpdfstring{doorLeave()}{doorLeave()}}
+{\footnotesize\ttfamily bool room\+::door\+Leave (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+This method checks if the player wants to leave through the door of the current toom and move to next room flag. \mbox{\Hypertarget{classroom_a11f4dc8bab258fba2c78866e40903b43}\label{classroom_a11f4dc8bab258fba2c78866e40903b43}} 
+\index{room@{room}!getDoor@{getDoor}}
+\index{getDoor@{getDoor}!room@{room}}
+\doxysubsubsection{\texorpdfstring{getDoor()}{getDoor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_door}{Door}} $\ast$ room\+::get\+Door (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method returns the door objevct within the room \mbox{\Hypertarget{classroom_a4b00dcbec4de307637221cb024155519}\label{classroom_a4b00dcbec4de307637221cb024155519}} 
+\index{room@{room}!hideRoom@{hideRoom}}
+\index{hideRoom@{hideRoom}!room@{room}}
+\doxysubsubsection{\texorpdfstring{hideRoom()}{hideRoom()}}
+{\footnotesize\ttfamily void room\+::hide\+Room (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{g\+Renderer }\end{DoxyParamCaption})}
+
+This method taakes in the S\+D\+L\+\_\+\+Renderer and clears it so that the room isnt visible anymore and is hidden \mbox{\Hypertarget{classroom_a38dd11afa1a753d173a940147bbaffe3}\label{classroom_a38dd11afa1a753d173a940147bbaffe3}} 
+\index{room@{room}!showRoom@{showRoom}}
+\index{showRoom@{showRoom}!room@{room}}
+\doxysubsubsection{\texorpdfstring{showRoom()}{showRoom()}}
+{\footnotesize\ttfamily void room\+::show\+Room (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{g\+Renderer }\end{DoxyParamCaption})}
+
+This method trakes in the S\+D\+L\+\_\+\+Renderer and displays the room on the window. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+H\+P/\+Downloads/oops/oops/\+Final/\+Maskless in the Pandemic/room.\+hpp\item 
+C\+:/\+Users/\+H\+P/\+Downloads/oops/oops/\+Final/\+Maskless in the Pandemic/room.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,95 @@
+\hypertarget{classassignment}{}\doxysection{assignment Class Reference}
+\label{classassignment}\index{assignment@{assignment}}
+
+
+this class is storing the collectible items that the main player has to collect in order ot win the game It inherits from \mbox{\hyperlink{class_entity}{Entity}} Class  
+
+
+
+
+{\ttfamily \#include $<$assignment.\+hpp$>$}
+
+Inheritance diagram for assignment\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classassignment}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classassignment_a0ef8d4dda508f66aa7840601cc02b68f}{assignment}} (S\+D\+L\+\_\+\+Texture $\ast$a, S\+D\+L\+\_\+\+Rect s, S\+D\+L\+\_\+\+Rect m, float n)
+\item 
+\mbox{\hyperlink{classassignment_ac99be246df4e1cf6ebdd91675f848498}{$\sim$assignment}} ()
+\item 
+void \mbox{\hyperlink{classassignment_a4cbb21922b10c10e43cebb0551249db2}{update}} ()
+\item 
+void \mbox{\hyperlink{classassignment_ae78441233913e96f3ce0c2bcf1d8decc}{render}} (S\+D\+L\+\_\+\+Renderer $\ast$renderer)
+\item 
+void \mbox{\hyperlink{classassignment_a132285312d2358dfd60c423fe9a5e81b}{if\+Collide}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+this class is storing the collectible items that the main player has to collect in order ot win the game It inherits from \mbox{\hyperlink{class_entity}{Entity}} Class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classassignment_a0ef8d4dda508f66aa7840601cc02b68f}\label{classassignment_a0ef8d4dda508f66aa7840601cc02b68f}} 
+\index{assignment@{assignment}!assignment@{assignment}}
+\index{assignment@{assignment}!assignment@{assignment}}
+\doxysubsubsection{\texorpdfstring{assignment()}{assignment()}}
+{\footnotesize\ttfamily assignment\+::assignment (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{a,  }\item[{S\+D\+L\+\_\+\+Rect}]{s,  }\item[{S\+D\+L\+\_\+\+Rect}]{m,  }\item[{float}]{n }\end{DoxyParamCaption})}
+
+This constructor is initializing the asignment with its texture, source, mover coordinates and its angle 
+\begin{DoxyParams}{Parameters}
+{\em a} & is the S\+D\+L\+\_\+\+Texture pointer for the assignment\textquotesingle{}s texture. \\
+\hline
+{\em s} & is the S\+D\+L\+\_\+\+Rect coordinates for object from the source image. \\
+\hline
+{\em m} & is the S\+D\+L\+\_\+\+Rect coordinates for mover assignment to be rendered on window. \\
+\hline
+{\em n} & is the angle at which assignment is to be rendered. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classassignment_ac99be246df4e1cf6ebdd91675f848498}\label{classassignment_ac99be246df4e1cf6ebdd91675f848498}} 
+\index{assignment@{assignment}!````~assignment@{$\sim$assignment}}
+\index{````~assignment@{$\sim$assignment}!assignment@{assignment}}
+\doxysubsubsection{\texorpdfstring{$\sim$assignment()}{~assignment()}}
+{\footnotesize\ttfamily assignment\+::$\sim$assignment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This is a destructor for assignment class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classassignment_a132285312d2358dfd60c423fe9a5e81b}\label{classassignment_a132285312d2358dfd60c423fe9a5e81b}} 
+\index{assignment@{assignment}!ifCollide@{ifCollide}}
+\index{ifCollide@{ifCollide}!assignment@{assignment}}
+\doxysubsubsection{\texorpdfstring{ifCollide()}{ifCollide()}}
+{\footnotesize\ttfamily void assignment\+::if\+Collide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function calls the action when a player collects/collides with assignment. \mbox{\Hypertarget{classassignment_ae78441233913e96f3ce0c2bcf1d8decc}\label{classassignment_ae78441233913e96f3ce0c2bcf1d8decc}} 
+\index{assignment@{assignment}!render@{render}}
+\index{render@{render}!assignment@{assignment}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void assignment\+::render (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function renders the Assignment on screen. 
+
+Implements \mbox{\hyperlink{class_entity_aa85678fd7986904da22a803f81033650}{Entity}}.
+
+\mbox{\Hypertarget{classassignment_a4cbb21922b10c10e43cebb0551249db2}\label{classassignment_a4cbb21922b10c10e43cebb0551249db2}} 
+\index{assignment@{assignment}!update@{update}}
+\index{update@{update}!assignment@{assignment}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void assignment\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function updates the Assignment. It is the virtual function inherited from entity class. 
+
+Implements \mbox{\hyperlink{class_entity_a59a29d9b7474baf13c9c76859242287d}{Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+H\+P/\+Downloads/oops/oops/\+Final/\+Maskless in the Pandemic/assignment.\+hpp\item 
+C\+:/\+Users/\+H\+P/\+Downloads/oops/oops/\+Final/\+Maskless in the Pandemic/assignment.\+cpp\end{DoxyCompactItemize}

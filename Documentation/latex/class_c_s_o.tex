@@ -1,0 +1,97 @@
+\hypertarget{class_c_s_o}{}\doxysection{C\+SO Class Reference}
+\label{class_c_s_o}\index{CSO@{CSO}}
+
+
+this class is used for creating Campus security Officers (C\+S\+Os) from whom the player has to hide. It inherits from \mbox{\hyperlink{class_entity}{Entity}} Class In the radius of \mbox{\hyperlink{class_c_s_o}{C\+SO}} s the health of player starts to decrrease.  
+
+
+
+
+{\ttfamily \#include $<$C\+S\+O.\+hpp$>$}
+
+Inheritance diagram for C\+SO\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_s_o}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_s_o_a4d13668a71567367e9f817a243f1fed0}{C\+SO}} (S\+D\+L\+\_\+\+Texture $\ast$p, S\+D\+L\+\_\+\+Rect Src, S\+D\+L\+\_\+\+Rect Mover)
+\item 
+void \mbox{\hyperlink{class_c_s_o_a1634394cb94e20a45a0ab2457076ae26}{update}} ()
+\item 
+void \mbox{\hyperlink{class_c_s_o_a55385987ab7c52fa1e56d179e5d4703a}{render}} (S\+D\+L\+\_\+\+Renderer $\ast$renderer)
+\item 
+bool \mbox{\hyperlink{class_c_s_o_ab6aef52b29c7eadca36eb84bf08ef1f9}{check\+Collision\+All}} (int cr)
+\item 
+void \mbox{\hyperlink{class_c_s_o_a309de5e11c4eac39de59edbc486147b7}{moverx}} (int cr)
+\item 
+S\+D\+L\+\_\+\+Rect \mbox{\hyperlink{class_c_s_o_a652769a9ce8495a41072e8c685f7398c}{get\+\_\+rad}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+this class is used for creating Campus security Officers (C\+S\+Os) from whom the player has to hide. It inherits from \mbox{\hyperlink{class_entity}{Entity}} Class In the radius of \mbox{\hyperlink{class_c_s_o}{C\+SO}} s the health of player starts to decrrease. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_s_o_a4d13668a71567367e9f817a243f1fed0}\label{class_c_s_o_a4d13668a71567367e9f817a243f1fed0}} 
+\index{CSO@{CSO}!CSO@{CSO}}
+\index{CSO@{CSO}!CSO@{CSO}}
+\doxysubsubsection{\texorpdfstring{CSO()}{CSO()}}
+{\footnotesize\ttfamily C\+S\+O\+::\+C\+SO (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{p,  }\item[{S\+D\+L\+\_\+\+Rect}]{Src,  }\item[{S\+D\+L\+\_\+\+Rect}]{Mover }\end{DoxyParamCaption})}
+
+This constructor is initializing the \mbox{\hyperlink{class_c_s_o}{C\+SO}} ibject with a S\+D\+L\+\_\+\+Texture the source coordinates of the \mbox{\hyperlink{class_c_s_o}{C\+SO}} in the texture and the mover coordinates of the \mbox{\hyperlink{class_c_s_o}{C\+SO}} on the screen windown. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_s_o_ab6aef52b29c7eadca36eb84bf08ef1f9}\label{class_c_s_o_ab6aef52b29c7eadca36eb84bf08ef1f9}} 
+\index{CSO@{CSO}!checkCollisionAll@{checkCollisionAll}}
+\index{checkCollisionAll@{checkCollisionAll}!CSO@{CSO}}
+\doxysubsubsection{\texorpdfstring{checkCollisionAll()}{checkCollisionAll()}}
+{\footnotesize\ttfamily bool C\+S\+O\+::check\+Collision\+All (\begin{DoxyParamCaption}\item[{int}]{cr }\end{DoxyParamCaption})}
+
+This method is used to check the collision of the \mbox{\hyperlink{class_c_s_o}{C\+SO}} woth entitites in the curren room. 
+\begin{DoxyParams}{Parameters}
+{\em cr} & is the current room index in which the \mbox{\hyperlink{class_c_s_o}{C\+SO}} is currentlty in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_s_o_a652769a9ce8495a41072e8c685f7398c}\label{class_c_s_o_a652769a9ce8495a41072e8c685f7398c}} 
+\index{CSO@{CSO}!get\_rad@{get\_rad}}
+\index{get\_rad@{get\_rad}!CSO@{CSO}}
+\doxysubsubsection{\texorpdfstring{get\_rad()}{get\_rad()}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Rect C\+S\+O\+::get\+\_\+rad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method returns the radius of the \mbox{\hyperlink{class_c_s_o}{C\+SO}} in the form of a S\+D\+L\+\_\+\+Rect \mbox{\Hypertarget{class_c_s_o_a309de5e11c4eac39de59edbc486147b7}\label{class_c_s_o_a309de5e11c4eac39de59edbc486147b7}} 
+\index{CSO@{CSO}!moverx@{moverx}}
+\index{moverx@{moverx}!CSO@{CSO}}
+\doxysubsubsection{\texorpdfstring{moverx()}{moverx()}}
+{\footnotesize\ttfamily void C\+S\+O\+::moverx (\begin{DoxyParamCaption}\item[{int}]{cr }\end{DoxyParamCaption})}
+
+This method allows the movement of the \mbox{\hyperlink{class_c_s_o}{C\+SO}} in a circular patrolling fashion in the current room. \mbox{\Hypertarget{class_c_s_o_a55385987ab7c52fa1e56d179e5d4703a}\label{class_c_s_o_a55385987ab7c52fa1e56d179e5d4703a}} 
+\index{CSO@{CSO}!render@{render}}
+\index{render@{render}!CSO@{CSO}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void C\+S\+O\+::render (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This method(virtual function of entity class) is used to render the \mbox{\hyperlink{class_c_s_o}{C\+SO}} on screen through the S\+D\+K\+\_\+\+Renderer that is passed as an argument. 
+
+Implements \mbox{\hyperlink{class_entity_aa85678fd7986904da22a803f81033650}{Entity}}.
+
+\mbox{\Hypertarget{class_c_s_o_a1634394cb94e20a45a0ab2457076ae26}\label{class_c_s_o_a1634394cb94e20a45a0ab2457076ae26}} 
+\index{CSO@{CSO}!update@{update}}
+\index{update@{update}!CSO@{CSO}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void C\+S\+O\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This is the virtual function of the entity class that updates the entity in this case the \mbox{\hyperlink{class_c_s_o}{C\+SO}}. 
+
+Implements \mbox{\hyperlink{class_entity_a59a29d9b7474baf13c9c76859242287d}{Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+H\+P/\+Downloads/oops/oops/\+Final/\+Maskless in the Pandemic/C\+S\+O.\+hpp\item 
+C\+:/\+Users/\+H\+P/\+Downloads/oops/oops/\+Final/\+Maskless in the Pandemic/C\+S\+O.\+cpp\end{DoxyCompactItemize}

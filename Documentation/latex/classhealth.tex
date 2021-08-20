@@ -1,0 +1,83 @@
+\hypertarget{classhealth}{}\doxysection{health Class Reference}
+\label{classhealth}\index{health@{health}}
+
+
+This class is for the health or lives of the player in a particular level of the game/.  
+
+
+
+
+{\ttfamily \#include $<$health.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classhealth_a7639a38694fe8a9b76103db236e8452f}{health}} (S\+D\+L\+\_\+\+Texture $\ast$alrm, float Lives)
+\item 
+void \mbox{\hyperlink{classhealth_acb2e8d7a312d3c43e613a4e03c8c8ce8}{render}} (S\+D\+L\+\_\+\+Renderer $\ast$renderer, int count)
+\item 
+void \mbox{\hyperlink{classhealth_a5ef193284af78b58d296a000a46b26b9}{operator+=}} (float val)
+\item 
+void \mbox{\hyperlink{classhealth_a731b989d60f5459579778b7c33c7d013}{operator-\/=}} (float val)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classhealth_afee8d3c9e94c4203490bdd4b4e86fb1d}{round}} (\mbox{\hyperlink{classhealth}{health}} h)
+\item 
+ostream \& \mbox{\hyperlink{classhealth_adc140ed3a1b18746e6f6edb3ce4291c4}{operator$<$$<$}} (ostream \&output, const \mbox{\hyperlink{classhealth}{health}} \&h)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is for the health or lives of the player in a particular level of the game/. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classhealth_a7639a38694fe8a9b76103db236e8452f}\label{classhealth_a7639a38694fe8a9b76103db236e8452f}} 
+\index{health@{health}!health@{health}}
+\index{health@{health}!health@{health}}
+\doxysubsubsection{\texorpdfstring{health()}{health()}}
+{\footnotesize\ttfamily health\+::health (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{alrm,  }\item[{float}]{Lives }\end{DoxyParamCaption})}
+
+This constructor is used to initialize a health objet by passing it a loaded texture for its image and the total number of lives of payer. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classhealth_a5ef193284af78b58d296a000a46b26b9}\label{classhealth_a5ef193284af78b58d296a000a46b26b9}} 
+\index{health@{health}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!health@{health}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily void health\+::operator+= (\begin{DoxyParamCaption}\item[{float}]{val }\end{DoxyParamCaption})}
+
+This is a overloaded operator method that is used to inccrement the total Lives by a certain float value \mbox{\Hypertarget{classhealth_a731b989d60f5459579778b7c33c7d013}\label{classhealth_a731b989d60f5459579778b7c33c7d013}} 
+\index{health@{health}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!health@{health}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily void health\+::operator-\/= (\begin{DoxyParamCaption}\item[{float}]{val }\end{DoxyParamCaption})}
+
+This is a overloaded operator method that is used to decrement the total Lives by a certain float value \mbox{\Hypertarget{classhealth_acb2e8d7a312d3c43e613a4e03c8c8ce8}\label{classhealth_acb2e8d7a312d3c43e613a4e03c8c8ce8}} 
+\index{health@{health}!render@{render}}
+\index{render@{render}!health@{health}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void health\+::render (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+This method is used to display the health on the top of game screen. It takes in a S\+D\+L\+\_\+\+Renderer and the number of lives count as paramters. 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classhealth_adc140ed3a1b18746e6f6edb3ce4291c4}\label{classhealth_adc140ed3a1b18746e6f6edb3ce4291c4}} 
+\index{health@{health}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!health@{health}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{output,  }\item[{const \mbox{\hyperlink{classhealth}{health}} \&}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+This is a overloaded friend extraction operator method that is display total lives in health object. \mbox{\Hypertarget{classhealth_afee8d3c9e94c4203490bdd4b4e86fb1d}\label{classhealth_afee8d3c9e94c4203490bdd4b4e86fb1d}} 
+\index{health@{health}!round@{round}}
+\index{round@{round}!health@{health}}
+\doxysubsubsection{\texorpdfstring{round}{round}}
+{\footnotesize\ttfamily int round (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classhealth}{health}}}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+This is a overloaded friend function method that is used to round the health by rounding the total Lives to a whole number and returning the whole number. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+H\+P/\+Downloads/oops/oops/\+Final/\+Maskless in the Pandemic/health.\+hpp\item 
+C\+:/\+Users/\+H\+P/\+Downloads/oops/oops/\+Final/\+Maskless in the Pandemic/health.\+cpp\end{DoxyCompactItemize}

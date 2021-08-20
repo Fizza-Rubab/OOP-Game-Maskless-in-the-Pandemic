@@ -1,0 +1,89 @@
+\hypertarget{classlevel2}{}\doxysection{level2 Class Reference}
+\label{classlevel2}\index{level2@{level2}}
+
+
+This class is used for the creating managing the level 2 object and its distinct attributes.  
+
+
+
+
+{\ttfamily \#include $<$level2.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlevel2_adbbdf61e7856ea94db538c170096bd23}{level2}} (S\+D\+L\+\_\+\+Texture $\ast$r, S\+D\+L\+\_\+\+Texture $\ast$P, S\+D\+L\+\_\+\+Texture $\ast$O, S\+D\+L\+\_\+\+Texture $\ast$CS, S\+D\+L\+\_\+\+Texture $\ast$As, S\+D\+L\+\_\+\+Texture $\ast$Cam, S\+D\+L\+\_\+\+Texture $\ast$Al)
+\item 
+void \mbox{\hyperlink{classlevel2_a21e7f033319bc97f1d4aa7cab7c8c3d3}{start\+Level}} (S\+D\+L\+\_\+\+Renderer $\ast$g\+Renderer, \mbox{\hyperlink{class_inputs}{Inputs}} $\ast$inputs, bool \&quit, ofstream \&outfile)
+\item 
+string \mbox{\hyperlink{classlevel2_ac26193eaef7c13743b375646ac516458}{get\+Level\+State}} ()
+\item 
+\mbox{\hyperlink{classlevel2_a1088443fbe07a629a2f5fb8874dce992}{$\sim$level2}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is used for the creating managing the level 2 object and its distinct attributes. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlevel2_adbbdf61e7856ea94db538c170096bd23}\label{classlevel2_adbbdf61e7856ea94db538c170096bd23}} 
+\index{level2@{level2}!level2@{level2}}
+\index{level2@{level2}!level2@{level2}}
+\doxysubsubsection{\texorpdfstring{level2()}{level2()}}
+{\footnotesize\ttfamily level2\+::level2 (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{r,  }\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{P,  }\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{O,  }\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{CS,  }\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{As,  }\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{Cam,  }\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{Al }\end{DoxyParamCaption})}
+
+This constructor is initializing the level 2 with textures of all objects within the level. 
+\begin{DoxyParams}{Parameters}
+{\em r} & is the S\+D\+L\+\_\+\+Texture array for the 4 textures of the rooms in level1. \\
+\hline
+{\em p} & is the S\+D\+L\+\_\+\+Texture for the player object and contains its loaded sprite\+Sheet. \\
+\hline
+{\em O} & is the S\+D\+L\+\_\+\+Texture for the all the roomobjects and contains their loaded sprite\+Sheet. \\
+\hline
+{\em CS} & is the S\+D\+L\+\_\+\+Texture for the \mbox{\hyperlink{class_c_s_o}{C\+SO}} object and contains its loaded sprite\+Sheet. \\
+\hline
+{\em As} & is the S\+D\+L\+\_\+\+Texture for the assignment objects and contains their loaded sprite\+Sheet. \\
+\hline
+{\em Cam} & is the S\+D\+L\+\_\+\+Texture for the camera object and contains its loaded sprite\+Sheet. \\
+\hline
+{\em Al} & is the S\+D\+L\+\_\+\+Texture for the health object and the time bject and contains their loaded sprite\+Sheet. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlevel2_a1088443fbe07a629a2f5fb8874dce992}\label{classlevel2_a1088443fbe07a629a2f5fb8874dce992}} 
+\index{level2@{level2}!````~level2@{$\sim$level2}}
+\index{````~level2@{$\sim$level2}!level2@{level2}}
+\doxysubsubsection{\texorpdfstring{$\sim$level2()}{~level2()}}
+{\footnotesize\ttfamily level2\+::$\sim$level2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This is the destructor for \mbox{\hyperlink{classlevel2}{level2}} class that deletes dynamically created objects and frees up memory. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlevel2_ac26193eaef7c13743b375646ac516458}\label{classlevel2_ac26193eaef7c13743b375646ac516458}} 
+\index{level2@{level2}!getLevelState@{getLevelState}}
+\index{getLevelState@{getLevelState}!level2@{level2}}
+\doxysubsubsection{\texorpdfstring{getLevelState()}{getLevelState()}}
+{\footnotesize\ttfamily string level2\+::get\+Level\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This methods written the state of the game in the form of string. Game states can be \char`\"{}\+Lost, \char`\"{}Won\char`\"{}, \char`\"{}Running"{} \mbox{\Hypertarget{classlevel2_a21e7f033319bc97f1d4aa7cab7c8c3d3}\label{classlevel2_a21e7f033319bc97f1d4aa7cab7c8c3d3}} 
+\index{level2@{level2}!startLevel@{startLevel}}
+\index{startLevel@{startLevel}!level2@{level2}}
+\doxysubsubsection{\texorpdfstring{startLevel()}{startLevel()}}
+{\footnotesize\ttfamily void level2\+::start\+Level (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{g\+Renderer,  }\item[{\mbox{\hyperlink{class_inputs}{Inputs}} $\ast$}]{inputs,  }\item[{bool \&}]{quit,  }\item[{ofstream \&}]{outfile }\end{DoxyParamCaption})}
+
+This method is used to begin the level 2, start the timer and start the game play by taking inputs from the user and making record in the outfile. 
+\begin{DoxyParams}{Parameters}
+{\em g\+Renderer} & is the S\+D\+L\+\_\+\+Renderer used to display objects composing the \mbox{\hyperlink{classlevel2}{level2}} class. \\
+\hline
+{\em inputs} & is the inputs for the player object which is being passed by reference. \\
+\hline
+{\em quit} & is the boolean quit attribute of the game passed by refernce to check if the game has been exited during the \mbox{\hyperlink{classlevel2}{level2}}. \\
+\hline
+{\em outfile} & is output file in which player progress records have been written. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+H\+P/\+Downloads/oops/oops/\+Final/\+Maskless in the Pandemic/level2.\+hpp\item 
+C\+:/\+Users/\+H\+P/\+Downloads/oops/oops/\+Final/\+Maskless in the Pandemic/level2.\+cpp\end{DoxyCompactItemize}

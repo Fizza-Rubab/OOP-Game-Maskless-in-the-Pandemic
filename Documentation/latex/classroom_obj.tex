@@ -1,0 +1,76 @@
+\hypertarget{classroom_obj}{}\doxysection{room\+Obj Class Reference}
+\label{classroom_obj}\index{roomObj@{roomObj}}
+
+
+This class is used to create any random stationary object within any room in a level. It inherits from the entity class.  
+
+
+
+
+{\ttfamily \#include $<$room\+Objects.\+hpp$>$}
+
+Inheritance diagram for room\+Obj\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classroom_obj}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classroom_obj_a07d9309f49bbbc7697d783e47c4906f3}{room\+Obj}} (S\+D\+L\+\_\+\+Texture $\ast$a, S\+D\+L\+\_\+\+Rect s, S\+D\+L\+\_\+\+Rect m, float n)
+\item 
+\mbox{\hyperlink{classroom_obj_a21637e593bb654e60b606f702b2c04eb}{$\sim$room\+Obj}} ()
+\item 
+void \mbox{\hyperlink{classroom_obj_a2c2ed3b9c896160d652a03bc4eca6f98}{update}} ()
+\item 
+void \mbox{\hyperlink{classroom_obj_a6635139ebee204dfac8c177c5e273c63}{render}} (S\+D\+L\+\_\+\+Renderer $\ast$renderer)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class is used to create any random stationary object within any room in a level. It inherits from the entity class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classroom_obj_a07d9309f49bbbc7697d783e47c4906f3}\label{classroom_obj_a07d9309f49bbbc7697d783e47c4906f3}} 
+\index{roomObj@{roomObj}!roomObj@{roomObj}}
+\index{roomObj@{roomObj}!roomObj@{roomObj}}
+\doxysubsubsection{\texorpdfstring{roomObj()}{roomObj()}}
+{\footnotesize\ttfamily room\+Obj\+::room\+Obj (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{a,  }\item[{S\+D\+L\+\_\+\+Rect}]{s,  }\item[{S\+D\+L\+\_\+\+Rect}]{m,  }\item[{float}]{n }\end{DoxyParamCaption})}
+
+This is theh constructor for a room object which takes in source and mover S\+D\+L\+\_\+\+Rects with its spritesheet texture and the angle at which the object has to be displayed. \mbox{\Hypertarget{classroom_obj_a21637e593bb654e60b606f702b2c04eb}\label{classroom_obj_a21637e593bb654e60b606f702b2c04eb}} 
+\index{roomObj@{roomObj}!````~roomObj@{$\sim$roomObj}}
+\index{````~roomObj@{$\sim$roomObj}!roomObj@{roomObj}}
+\doxysubsubsection{\texorpdfstring{$\sim$roomObj()}{~roomObj()}}
+{\footnotesize\ttfamily room\+Obj\+::$\sim$room\+Obj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This is the detructor for a room object which deallocates any dynamically allocated memory. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classroom_obj_a6635139ebee204dfac8c177c5e273c63}\label{classroom_obj_a6635139ebee204dfac8c177c5e273c63}} 
+\index{roomObj@{roomObj}!render@{render}}
+\index{render@{render}!roomObj@{roomObj}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void room\+Obj\+::render (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This method is used to display the room object on the screen by using S\+D\+L\+\_\+\+Renderer passed as a parameter. It is a pure virtual method of entity (abstract parent class) of room object 
+
+Implements \mbox{\hyperlink{class_entity_aa85678fd7986904da22a803f81033650}{Entity}}.
+
+\mbox{\Hypertarget{classroom_obj_a2c2ed3b9c896160d652a03bc4eca6f98}\label{classroom_obj_a2c2ed3b9c896160d652a03bc4eca6f98}} 
+\index{roomObj@{roomObj}!update@{update}}
+\index{update@{update}!roomObj@{roomObj}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void room\+Obj\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This is the method to update the room\+Objects within every game frame it is the virtual mehtod of the parent abstract class \textquotesingle{}\mbox{\hyperlink{class_entity}{Entity}}\textquotesingle{} of the room\+Object. 
+
+Implements \mbox{\hyperlink{class_entity_a59a29d9b7474baf13c9c76859242287d}{Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+H\+P/\+Downloads/oops/oops/\+Final/\+Maskless in the Pandemic/room\+Objects.\+hpp\item 
+C\+:/\+Users/\+H\+P/\+Downloads/oops/oops/\+Final/\+Maskless in the Pandemic/room\+Objects.\+cpp\end{DoxyCompactItemize}

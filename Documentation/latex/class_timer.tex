@@ -1,0 +1,85 @@
+\hypertarget{class_timer}{}\doxysection{Timer Class Reference}
+\label{class_timer}\index{Timer@{Timer}}
+
+
+This class is used for generating the timer for level 2 and for slides which specifies for how much tume an action has to be performed/.  
+
+
+
+
+{\ttfamily \#include $<$timer.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_timer_af00ec11a6082266757e02f21e824ea9a}{Timer}} (int)
+\item 
+\mbox{\hyperlink{class_timer_a5f16e8da27d2a5a5242dead46de05d97}{Timer}} ()
+\item 
+void \mbox{\hyperlink{class_timer_aa8c887576ec3b0d68c10ebf4097c367c}{start\+Timer}} ()
+\item 
+void \mbox{\hyperlink{class_timer_a27f97da1b1d19ad74a847703ca25c455}{stop\+Timer}} ()
+\item 
+bool \mbox{\hyperlink{class_timer_ab2fc1e43415e874746ce0afdfba85801}{should\+Stop}} (Uint32)
+\item 
+Uint32 \mbox{\hyperlink{class_timer_a62bbc2379bbe5aac86ae2609d2db1437}{get\+Time}} ()
+\item 
+\mbox{\hyperlink{class_timer_a14fa469c4c295c5fa6e66a4ad1092146}{$\sim$\+Timer}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is used for generating the timer for level 2 and for slides which specifies for how much tume an action has to be performed/. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_timer_af00ec11a6082266757e02f21e824ea9a}\label{class_timer_af00ec11a6082266757e02f21e824ea9a}} 
+\index{Timer@{Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{Timer()}{Timer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Timer\+::\+Timer (\begin{DoxyParamCaption}\item[{int}]{time }\end{DoxyParamCaption})}
+
+This is a contructor which initializes a timer with an integer limit passed as a parameter. \mbox{\Hypertarget{class_timer_a5f16e8da27d2a5a5242dead46de05d97}\label{class_timer_a5f16e8da27d2a5a5242dead46de05d97}} 
+\index{Timer@{Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{Timer()}{Timer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Timer\+::\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This is a default constructor for the timer. \mbox{\Hypertarget{class_timer_a14fa469c4c295c5fa6e66a4ad1092146}\label{class_timer_a14fa469c4c295c5fa6e66a4ad1092146}} 
+\index{Timer@{Timer}!````~Timer@{$\sim$Timer}}
+\index{````~Timer@{$\sim$Timer}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{$\sim$Timer()}{~Timer()}}
+{\footnotesize\ttfamily Timer\+::$\sim$\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method is a destructor that is ysed to delete any dynamically allocated memory. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_timer_a62bbc2379bbe5aac86ae2609d2db1437}\label{class_timer_a62bbc2379bbe5aac86ae2609d2db1437}} 
+\index{Timer@{Timer}!getTime@{getTime}}
+\index{getTime@{getTime}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily Uint32 Timer\+::get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method gets the current time. \mbox{\Hypertarget{class_timer_ab2fc1e43415e874746ce0afdfba85801}\label{class_timer_ab2fc1e43415e874746ce0afdfba85801}} 
+\index{Timer@{Timer}!shouldStop@{shouldStop}}
+\index{shouldStop@{shouldStop}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{shouldStop()}{shouldStop()}}
+{\footnotesize\ttfamily bool Timer\+::should\+Stop (\begin{DoxyParamCaption}\item[{Uint32}]{passed\+Time }\end{DoxyParamCaption})}
+
+This method checks if the current time passed as a paramter is equal to the timers limit and decides if the timer should stop or not. \mbox{\Hypertarget{class_timer_aa8c887576ec3b0d68c10ebf4097c367c}\label{class_timer_aa8c887576ec3b0d68c10ebf4097c367c}} 
+\index{Timer@{Timer}!startTimer@{startTimer}}
+\index{startTimer@{startTimer}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{startTimer()}{startTimer()}}
+{\footnotesize\ttfamily void Timer\+::start\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method begins teh timer and starts S\+D\+L\+\_\+get\+Ticks() \mbox{\Hypertarget{class_timer_a27f97da1b1d19ad74a847703ca25c455}\label{class_timer_a27f97da1b1d19ad74a847703ca25c455}} 
+\index{Timer@{Timer}!stopTimer@{stopTimer}}
+\index{stopTimer@{stopTimer}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{stopTimer()}{stopTimer()}}
+{\footnotesize\ttfamily void Timer\+::stop\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method stops the timer. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+H\+P/\+Downloads/oops/oops/\+Final/\+Maskless in the Pandemic/timer.\+hpp\item 
+C\+:/\+Users/\+H\+P/\+Downloads/oops/oops/\+Final/\+Maskless in the Pandemic/timer.\+cpp\end{DoxyCompactItemize}
